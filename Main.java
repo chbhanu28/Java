@@ -107,8 +107,45 @@ public static void strcat(String s){//string concatenation without using strcat 
          System.out.print(c);
      }
  }
+ public static void amstrong(int n){//Amstrong checking
+    int sum=0;
+    int temp=n;
+    int rem=0;
+    while(n!=0){
+        rem=n%10;
+        sum=sum+(rem*rem*rem);
+n=n/10;
+    }
+    if(sum==temp){
+        System.out.println("amstrong number "+temp);
+    }
+    else{
+        System.out.println("not amstrong number "+sum);
+    }
+ }
+ public static void digits(int n){//Digit summation
+    int div=0;
+    int count=0;
+    while(n!=0){
+        n=n/10;
+        count++;
+    }
+    System.out.print(count);
+ }
+public static void reverse(int n) {//Reverse the digits of given number
+
+    int rem = 0;
+    int rev = 0;
+
+    while (n != 0) {
+        rem = n % 10;
+        rev = (rev * 10) + rem;
+        n = n / 10;
+    }
+
+    System.out.println("Reverse number: " + rev);
+}
 
 	public static void main(String[] args) {
-rev("bhanu");
-}
+    }
 }
