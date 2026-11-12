@@ -109,6 +109,35 @@ public static void revnum(int n) {//Reverse the digits of given number
 
 
 
+    public static void  replace(String word){//replace String without build function
+  word=word.toUpperCase();
+  String result="";
+  for(int i=0;i<word.length();i++){
+char c=word.charAt(i);
+if(c>='A'&& c<='Z'){
+  result=result+c;
+}
+  }
+   System.out.print(result);
+}
+
+
+      public static void frequencychar(String words){//Find the Frequency of a Character in a String
+    char target='a';
+    int count=0;
+    for(int i=0;i<words.length();i++){
+      char c=words.charAt(i);
+      if(c==target){
+        count++;
+      }
+    }
+    System.out.print(count);
+  }
+
+    
+    
+
+
 public static void main(String[] args) {
     revnum(12345);
 }
